@@ -1,4 +1,4 @@
-# [JSL06] Submission: CodeCuisine Menu Display System Challenge
+ [JSL06] Submission: CodeCuisine Menu Display System Challenge
 
 You will:
 1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_6_StudentNo_Classcode_Group_Name-Surname_JSL06
@@ -61,3 +61,21 @@ To complete this challenge, follow these steps:
 3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
 
 By following these steps and completing the challenge, you will demonstrate your ability to create interactive web applications using JavaScript. Good luck, and enjoy building the CodeCuisine Menu Display System!
+
+
+Interactive Menu Application
+This application creates an interactive menu that allows users to select items from various categories and add them to their order. It dynamically generates the menu from a JavaScript object and displays the selected items along with the total price.
+The application uses the following files:
+index.html: Contains the HTML structure for the menu and order summary.
+index.css: Provides the styling for the menu and order summary.
+index.js: Implements the JavaScript logic for dynamically displaying the menu items, adding items to the order, and updating the total price.
+Getting Started
+To run the application, simply open the index.html file in a web browser.
+Usage
+Click on a menu item to add it to your order.
+Click on an item in the order summary to remove it from your order.
+The total price is automatically updated as you add or remove items.
+Customization
+To customize the menu items and their categories, modify the menu object in the index.js file. You can add or remove categories and items as needed.
+Notes
+This application assumes that all menu items have a fixed price of $5 for simplicity. To introduce different prices for each item, you can modify the addToOrder function to accept the price as a second argument and update the price calculation logic accordingly.
