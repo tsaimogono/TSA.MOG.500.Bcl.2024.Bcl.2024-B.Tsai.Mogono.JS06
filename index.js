@@ -86,25 +86,26 @@ function displayMenuItems(menu) {
     });
 }
 
-let orderTotal = 0;
+let total = 0;
+//const orderItemsList = document.getElementById("order-items");
+const orderTotalElem = document.getElementById("order-total");
 
 function addToOrder(itemName) {
-    const listItem = document.createElement("li");
-    listItem.textContent = itemName;
-    
-    // Add click event listener to remove item from order
-listItem.addEventListener("click", function(
-) {
-        this.style.display = "none";
-        orderItemsList.innerHTML += "";
-        orderTotal -= 5;
-        orderTotalElement.innerText = "Total: $" + orderTotal;
-    });
+    const itemPrice = 60;
+    const newTotal = total + itemPrice;
+    total = newTotal;
 
-    // Add item to order and update total
-orderItemsList.appendChild(listItem);
-    orderTotal += 5;
-    orderTotalElement.innerText = "Total: $" + orderTotal;
+    const orderItem = document.createElement("li");
+    orderItem.classList.add("order-item");
+    orderItem.textContent = `${itemName}`;
+    orderItemsList.appendChild(orderItem);
+
+    orderTotalElem.textContent = newTotal.toFixed(2);
 }
 
-displayMenuItems(menu); // Display the menu items
+function initMenuSystem(
+) {
+    displayMenuItems(menu);
+}
+
+initMenuSystem();
