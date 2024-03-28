@@ -58,6 +58,7 @@ function initMenuSystem(menu) {
 initMenuSystem(menu);**/
 
 //Sample menu data (Consider fetching this data from a server in a real-world scenario)
+
 const menu = {
     Starters: ["Garlic Bread", "Bruschetta"],
     MainCourses: ["Margherita Pizza", "Spaghetti Carbonara"],
@@ -98,7 +99,7 @@ orderItem.onclick = () => removeOrderItem(orderItem);
 
   // Calculate and update the total price
   const currentTotal = parseFloat(orderTotalElem.textContent);
-  const itemPrice = 38; // Assuming each item costs R38 (you can customize this)
+  const itemPrice = 60; // Assuming each item costs R60 (you can customize this)
   const newTotal = currentTotal + itemPrice;
   orderTotalElem.textContent = newTotal.toFixed(2);
 }
@@ -108,7 +109,7 @@ function removeOrderItem(item) {
   
     // Calculate and update the total price
     const currentTotal = parseFloat(orderTotalElem.textContent);
-    const itemPrice = 38; // Assuming each item costs R38 (you can customize this)
+    const itemPrice = 60; // Assuming each item costs R60 (you can customize this)
     const newTotal = currentTotal - itemPrice;
 
     item.remove();
