@@ -90,10 +90,10 @@ To use the menu system:
 
 
 
-1. **DOM Manipulation:** Manipulating the DOM to dynamically display menu items and update the order list and total price can be challenging, especially if you're new to JavaScript.
+1. **DOM Manipulation:** Manipulating the DOM to dynamically display menu items and update the order list and total price can be challenging,
 
 2. **Event Handling:** Handling click events on menu items and order items, and correctly updating the order and total price, requires a good understanding of event handling in JavaScript.
 
-3. **Error Handling:** Implementing error handling to handle unexpected user input or invalid states can be complex, but it's essential for a smooth user experience.
+3. **Error Handling:** Implementing error handling to handle unexpected user input or invalid states can be complex, 
 
 5. **Testing:** Testing the functionality of the application, including edge cases and user interactions, can be time-consuming but is crucial to ensure the reliability of the system.
